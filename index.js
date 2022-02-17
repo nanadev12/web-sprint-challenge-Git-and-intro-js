@@ -339,7 +339,7 @@ function artistInfo(array,name1){
     }
   }
 };
-console.log(artistInfo(artists,"Frida Kahlo"))
+console.log(artistInfo(artists,"Frida Kahlo   "))
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 9: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
