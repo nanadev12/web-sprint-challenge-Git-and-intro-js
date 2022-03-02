@@ -208,10 +208,10 @@ Practice accessing data above by console.log-ing following items:
 (no functions needed) */
 
 //(1) Name of the first artist (0th index) in the array
-console.log(artists[0].name)
+// console.log(artists[0].name)
 
 //(2) Bio of the third artist (2nd index) in the array 
-console.log(artists[2].bio)
+// console.log(artists[2].bio)
 
 
 
@@ -220,7 +220,7 @@ console.log(artists[2].bio)
 There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Fix this issue and console.log() to check your work. */
 
 artists[9].name = 'Vincent Van Gogh'
-console.log(artists[9].name)
+// console.log(artists[9].name)
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀  
 Use getArtistByIndex to do the following:
@@ -254,7 +254,7 @@ If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
   }
   return newA;
 }
-console.log(get20s(artists))
+// console.log(get20s(artists))
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -270,7 +270,7 @@ function removeArtist(array,index) {
   array.splice(array[index], 1);
   return array.length;
 }
-console.log(removeArtist(artists,0))
+// console.log(removeArtist(artists,0))
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use addArtist to do the following: 
@@ -321,7 +321,7 @@ function lotsOfArt(array) {
   }
   return newP;
 }
-console.log(lotsOfArt(artists))
+// console.log(lotsOfArt(artists))
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 8: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Use artistInfo to do the following: 
@@ -333,13 +333,15 @@ For example artistInfo(artists, 'Frida Kahlo') will return:
   ["Frida Kahlo de Rivera (Spanish pronunciation: [ˈfɾiða ˈkalo]; born Magdalena Carmen Frida Kahlo y Calderón; 6 July 1907 – 13 July 1954) was a Mexican artist who painted many portraits, self-portraits and works inspired by the nature and artifacts of Mexico. Inspired by the country's popular culture, she employed a naïve folk art style to explore questions of identity, postcolonialism, gender, class and race in Mexican society. Her paintings often had strong autobiographical elements and mixed realism with fantasy. In addition to belonging to the post-revolutionary Mexicayotl movement, which sought to define a Mexican identity, Kahlo has been described as a surrealist or magical realist.Born to a German father and a mestiza mother, Kahlo spent most of her childhood and adult life at her family home in Coyoacán, La Casa Azul, now known and publicly accessible as the Frida Kahlo Museum. She was disabled by polio as a child. Until a traffic accident at age eighteen caused lifelong pain and medical problems, she had been a promising student headed for medical school. During her recovery, she returned to her childhood hobby of art with the idea of becoming an artist."]
 */
 function artistInfo(array,name1){
+  let bioA = [];
   for(let i = 0; i < array.length; i++){
     if(array[i].name === name1){
-      return array[i].bio;
+    bioA.push(array[i].bio); 
     }
   }
+  return bioA;
 };
-console.log(artistInfo(artists,"Frida Kahlo   "))
+//  console.log(artistInfo(artists,""))
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 9: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
